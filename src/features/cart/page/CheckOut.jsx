@@ -104,7 +104,7 @@ const Checkout = () => {
         });
 
         return [
-            "Hello Mittyco Team,",
+            "Hello Vellora Team,",
             "",
             `I placed an order via WhatsApp. Order: ORD-${String(orderId).padStart(6, "0")}`,
             "",
@@ -234,17 +234,17 @@ const Checkout = () => {
     }
         return (
 
-        <div className="eehook-checkout">
+        <div className="vellora-checkout">
 
-            <div className="eehook-checkout-header">
+            <div className="vellora-checkout-header">
 
-                <h1 className="eehook-checkout-title">
+                <h1 className="vellora-checkout-title">
 
                     Checkout
 
                 </h1>
 
-                <p className="eehook-checkout-subtitle">
+                <p className="vellora-checkout-subtitle">
 
                     Choose Cash on Delivery or send your order through WhatsApp.
 
@@ -254,13 +254,13 @@ const Checkout = () => {
 
             </div>
 
-            <div className="eehook-checkout-wrapper">
+            <div className="vellora-checkout-wrapper">
 
-                <div className="eehook-checkout-left">
+                <div className="vellora-checkout-left">
 
-                    <div className="eehook-checkout-card">
+                    <div className="vellora-checkout-card">
 
-                        <div className="eehook-card-header">
+                        <div className="vellora-card-header">
 
                             <h2>
 
@@ -269,7 +269,7 @@ const Checkout = () => {
                             </h2>
 
                             <button
-                                className="eehook-add-address-btn"
+                                className="vellora-add-address-btn"
                                 onClick={() => navigate("/profile")}
                             >
 
@@ -283,7 +283,7 @@ const Checkout = () => {
 
                             addresses.length === 0 ?
 
-                                <div className="eehook-empty-box">
+                                <div className="vellora-empty-box">
 
                                     <p>
 
@@ -299,7 +299,7 @@ const Checkout = () => {
 
                                     <div
                                         key={address.id}
-                                        className={`eehook-address-card ${
+                                        className={`vellora-address-card ${
                                             selectedAddress === address.id
                                                 ? "active"
                                                 : ""
@@ -319,7 +319,7 @@ const Checkout = () => {
                                             }
                                         />
 
-                                        <div className="eehook-address-info">
+                                        <div className="vellora-address-info">
 
                                             <h4>
 
@@ -362,7 +362,7 @@ const Checkout = () => {
 
                     </div>
 
-                    <div className="eehook-checkout-card">
+                    <div className="vellora-checkout-card">
 
                         <h2>
 
@@ -370,9 +370,9 @@ const Checkout = () => {
 
                         </h2>
 
-                        <div className="eehook-payment-card">
+                        <div className="vellora-payment-card">
 
-                            <div className="eehook-payment-title">
+                            <div className="vellora-payment-title">
 
                             Choose how to place your order
 
@@ -384,7 +384,7 @@ const Checkout = () => {
 
                             </p>
 
-                            <label className={`eehook-payment-option ${paymentMethod === "COD" ? "active" : ""}`}>
+                            <label className={`vellora-payment-option ${paymentMethod === "COD" ? "active" : ""}`}>
                                 <input
                                     type="radio"
                                     name="payment-method"
@@ -398,7 +398,7 @@ const Checkout = () => {
                                 </span>
                             </label>
 
-                            <label className={`eehook-payment-option ${paymentMethod === "WHATSAPP" ? "active" : ""}`}>
+                            <label className={`vellora-payment-option ${paymentMethod === "WHATSAPP" ? "active" : ""}`}>
                                 <input
                                     type="radio"
                                     name="payment-method"
@@ -418,9 +418,9 @@ const Checkout = () => {
 
                 </div>
 
-                <div className="eehook-checkout-right">
+                <div className="vellora-checkout-right">
 
-                    <div className="eehook-checkout-card">
+                    <div className="vellora-checkout-card">
 
                         <h2>
 
@@ -432,7 +432,7 @@ const Checkout = () => {
 
                             cartItems.length === 0 ?
 
-                                <div className="eehook-empty-box">
+                                <div className="vellora-empty-box">
 
                                     <p>
 
@@ -448,10 +448,10 @@ const Checkout = () => {
 
                                     <div
                                         key={item.id}
-                                        className="eehook-summary-item"
+                                        className="vellora-summary-item"
                                     >
 
-                                        <div className="eehook-summary-image">
+                                        <div className="vellora-summary-image">
 
                                             <img
                                                 src={getImageUrl(item.product_image)}
@@ -460,7 +460,7 @@ const Checkout = () => {
 
                                         </div>
 
-                                        <div className="eehook-summary-details">
+                                        <div className="vellora-summary-details">
 
                                             <h4>
 
@@ -496,7 +496,7 @@ const Checkout = () => {
 
                                         </div>
 
-                                        <div className="eehook-summary-price">
+                                        <div className="vellora-summary-price">
 
                                             <DirhamAmount value={Number(item.total_price)} />
 
@@ -508,8 +508,8 @@ const Checkout = () => {
 
                         }
 
-                        <div className="eehook-summary-total">
-                                                        <div className="eehook-summary-row">
+                        <div className="vellora-summary-total">
+                                                        <div className="vellora-summary-row">
 
                                 <span>
 
@@ -525,7 +525,7 @@ const Checkout = () => {
 
                             </div>
 
-                            {/* <div className="eehook-summary-row">
+                            {/* <div className="vellora-summary-row">
 
                                 <span>
 
@@ -546,7 +546,7 @@ const Checkout = () => {
 
                             </div> */}
 
-                            <div className="eehook-summary-row">
+                            <div className="vellora-summary-row">
 
                                 <span>
 
@@ -566,7 +566,7 @@ const Checkout = () => {
 
                             </div>
 
-                            <div className="eehook-summary-row">
+                            <div className="vellora-summary-row">
 
                                 <span>
 
@@ -582,9 +582,9 @@ const Checkout = () => {
 
                             </div>
 
-                            <div className="eehook-summary-divider"></div>
+                            <div className="vellora-summary-divider"></div>
 
-                            <div className="eehook-grand-total">
+                            <div className="vellora-grand-total">
 
                                 <div>
 
@@ -607,7 +607,7 @@ const Checkout = () => {
                         </div>
 
                         <button
-                            className="eehook-checkout-btn"
+                            className="vellora-checkout-btn"
                             onClick={placeOrder}
                             disabled={processing || cartItems.length === 0}
                         >
@@ -628,7 +628,7 @@ const Checkout = () => {
 
                         </button>
 
-                        <p className="eehook-payment-note">
+                        <p className="vellora-payment-note">
 
                             {paymentMethod === "WHATSAPP"
                                 ? "Your order details will open in WhatsApp for confirmation."

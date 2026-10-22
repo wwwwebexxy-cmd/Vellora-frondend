@@ -25,12 +25,12 @@ import ProtectedRoute from '../features/auth/page/ProtectedRoute'
 import Unauthorized from '../features/auth/page/Unauthorized'
 function LegacyOrderDetailsRedirect() {
     const { id } = useParams();
-    return <Navigate to={`/mittyco-dashboard/orders/${id}`} replace />;
+    return <Navigate to={`/vellora-dashboard/orders/${id}`} replace />;
 }
 
 function LegacyDashboardPathRedirect() {
     const location = useLocation();
-    const nextPath = location.pathname.replace(/^\/(?:order-dashboard|orderdashboard)/i, "/mittyco-dashboard");
+    const nextPath = location.pathname.replace(/^\/(?:order-dashboard|orderdashboard)/i, "/vellora-dashboard");
     return <Navigate to={`${nextPath}${location.search}${location.hash}`} replace />;
 }
 
@@ -78,54 +78,54 @@ function Router() {
 
                 <Route path='login' element={<Login />} />
                 <Route path='admin-login' element={<AdminLogin />} />
-                <Route path='mittyco-dashboard/admin-login' element={<AdminLogin />} />
+                <Route path='vellora-dashboard/admin-login' element={<AdminLogin />} />
                 <Route path='unauthorized' element={<Unauthorized />} />
                 <Route path='signup' element={<Signup />} />
                 <Route path='forgot-password' element={<ForgotPassword />} />
                 <Route path="/reset-password/:uidb64/:token" element={<ResetPassword />} />
 
 
-                <Route path="mittyco-dashboard" element={
+                <Route path="vellora-dashboard" element={
                     <AdminRoute>
                         <OrderDashboard />
                     </AdminRoute>
                 } />
-                <Route path="mittyco-dashboard/product-variants" element={<AdminRoute><Navigate to="/mittyco-dashboard/products" replace /></AdminRoute>} />
-                <Route path="mittyco-dashboard/product-variant-units" element={<AdminRoute><Navigate to="/mittyco-dashboard/products" replace /></AdminRoute>} />
-                <Route path="mittyco-dashboard/product-images" element={<AdminRoute><Navigate to="/mittyco-dashboard/products" replace /></AdminRoute>} />
-                <Route path="mittyco-dashboard/products/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/products/:id" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/products/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/hero-banners/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/hero-banners/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/promo-banners/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/promo-banners/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/hero-side-banners/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/hero-side-banners/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/coupons/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/coupons/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/trust-benefits/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/product-highlights/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/product-highlights/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/product-messages/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/product-messages/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/welcome-bonuses/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/welcome-bonuses/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/coupon-usages/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/coupon-usages/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/token-blacklist" element={<AdminRoute><Navigate to="/mittyco-dashboard/token-blacklist/outstanding-tokens" replace /></AdminRoute>} />
-                <Route path="mittyco-dashboard/token-blacklist/outstanding-tokens" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/token-blacklist/blacklisted-tokens" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/:section" element={
+                <Route path="vellora-dashboard/product-variants" element={<AdminRoute><Navigate to="/vellora-dashboard/products" replace /></AdminRoute>} />
+                <Route path="vellora-dashboard/product-variant-units" element={<AdminRoute><Navigate to="/vellora-dashboard/products" replace /></AdminRoute>} />
+                <Route path="vellora-dashboard/product-images" element={<AdminRoute><Navigate to="/vellora-dashboard/products" replace /></AdminRoute>} />
+                <Route path="vellora-dashboard/products/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/products/:id" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/products/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/hero-banners/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/hero-banners/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/promo-banners/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/promo-banners/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/hero-side-banners/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/hero-side-banners/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/coupons/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/coupons/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/trust-benefits/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/product-highlights/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/product-highlights/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/product-messages/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/product-messages/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/welcome-bonuses/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/welcome-bonuses/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/coupon-usages/new" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/coupon-usages/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/token-blacklist" element={<AdminRoute><Navigate to="/vellora-dashboard/token-blacklist/outstanding-tokens" replace /></AdminRoute>} />
+                <Route path="vellora-dashboard/token-blacklist/outstanding-tokens" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/token-blacklist/blacklisted-tokens" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/:section" element={
                     <AdminRoute>
                         <OrderDashboard />
                     </AdminRoute>
                 } />
-                <Route path="mittyco-dashboard/orders/:id" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/:section/:id/view" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
-                <Route path="mittyco-dashboard/:section/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/orders/:id" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/:section/:id/view" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
+                <Route path="vellora-dashboard/:section/:id/edit" element={<AdminRoute><OrderDashboard /></AdminRoute>} />
                 <Route
-                    path="/mittyco-dashboard/details/:id"
+                    path="/vellora-dashboard/details/:id"
                     element={
                         <AdminRoute>
                             <LegacyOrderDetailsRedirect />
@@ -133,7 +133,7 @@ function Router() {
                     }
                 />
                 <Route
-                    path="/mittyco-dashboard/invoice/:id"
+                    path="/vellora-dashboard/invoice/:id"
                     element={
                         <AdminRoute>
                             <Invoice />

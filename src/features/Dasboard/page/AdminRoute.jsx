@@ -9,7 +9,7 @@ export default function AdminRoute({ children }) {
         is_superuser: adminUser.is_superuser ?? getAuthValue("is_superuser"),
         role: adminUser.role || getAuthValue("role"),
     });
-    if (!hasAuthSession()) return <Navigate to="/mittyco-dashboard/admin-login" state={{ from: location }} replace />;
-    if (!isSuperAdmin) return <Navigate to="/mittyco-dashboard/admin-login" state={{ from: location, accessDenied: true }} replace />;
+    if (!hasAuthSession()) return <Navigate to="/vellora-dashboard/admin-login" state={{ from: location }} replace />;
+    if (!isSuperAdmin) return <Navigate to="/vellora-dashboard/admin-login" state={{ from: location, accessDenied: true }} replace />;
     return children;
 }

@@ -1,14 +1,14 @@
-.mittyco-video-section {
+.vellora-video-section {
     width: min(100% - 32px, 1440px);
     margin: 0 auto;
     padding: 58px 0 68px;
 }
 
-.mittyco-story-block + .mittyco-story-block {
+.vellora-story-block + .vellora-story-block {
     margin-top: 64px;
 }
 
-.mittyco-story-heading {
+.vellora-story-heading {
     display: flex;
     align-items: end;
     justify-content: space-between;
@@ -16,7 +16,7 @@
     margin-bottom: 26px;
 }
 
-.mittyco-video-eyebrow {
+.vellora-video-eyebrow {
     margin: 0 0 8px;
     color: #1f5b3e;
     font-size: 11px;
@@ -24,7 +24,7 @@
     letter-spacing: 2px;
 }
 
-.mittyco-story-heading h2 {
+.vellora-story-heading h2 {
     margin: 0;
     color: #1f5b3e;
     font-family: Georgia, "Times New Roman", serif;
@@ -32,7 +32,7 @@
     line-height: 1.08;
 }
 
-.mittyco-video-intro {
+.vellora-video-intro {
     max-width: 390px;
     margin: 0;
     color: #56665e;
@@ -40,20 +40,20 @@
     line-height: 1.65;
 }
 
-.mittyco-story-feature {
+.vellora-story-feature {
     display: grid;
     grid-template-columns: minmax(0, 1.55fr) minmax(260px, .75fr);
     gap: 22px;
     align-items: stretch;
 }
 
-.mittyco-story-grid {
+.vellora-story-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
 }
 
-.mittyco-story-video-card {
+.vellora-story-video-card {
     min-width: 0;
     overflow: hidden;
     border: 1px solid #e2e7db;
@@ -62,28 +62,28 @@
     box-shadow: 0 12px 30px rgba(31, 91, 62, .08);
 }
 
-.mittyco-story-video-frame {
+.vellora-story-video-frame {
     aspect-ratio: 16 / 10;
     overflow: hidden;
     background: #1f5b3e;
 }
 
-.mittyco-story-video-card--featured .mittyco-story-video-frame {
+.vellora-story-video-card--featured .vellora-story-video-frame {
     aspect-ratio: 16 / 8;
 }
 
-.mittyco-story-video {
+.vellora-story-video {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.mittyco-story-video-copy {
+.vellora-story-video-copy {
     padding: 18px 19px 21px;
 }
 
-.mittyco-story-video-copy p {
+.vellora-story-video-copy p {
     margin: 0 0 7px;
     color: #c28c00;
     font-size: 10px;
@@ -92,21 +92,21 @@
     text-transform: uppercase;
 }
 
-.mittyco-story-video-copy h3 {
+.vellora-story-video-copy h3 {
     margin: 0 0 7px;
     color: #1f5b3e;
     font-size: 20px;
     line-height: 1.2;
 }
 
-.mittyco-story-video-copy span {
+.vellora-story-video-copy span {
     display: block;
     color: #65736b;
     font-size: 13px;
     line-height: 1.55;
 }
 
-.mittyco-story-note {
+.vellora-story-note {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,7 +116,7 @@
     color: #fff;
 }
 
-.mittyco-story-note-mark {
+.vellora-story-note-mark {
     display: grid;
     place-items: center;
     width: 38px;
@@ -128,21 +128,21 @@
     font-size: 18px;
 }
 
-.mittyco-story-note h3 {
+.vellora-story-note h3 {
     margin: 0 0 12px;
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(24px, 2.4vw, 34px);
     line-height: 1.1;
 }
 
-.mittyco-story-note p {
+.vellora-story-note p {
     margin: 0;
     color: rgba(255, 255, 255, .82);
     font-size: 14px;
     line-height: 1.7;
 }
 
-.mittyco-story-link {
+.vellora-story-link {
     display: inline-flex;
     align-items: center;
     gap: 9px;
@@ -154,7 +154,7 @@
     text-decoration: none;
 }
 
-.mittyco-video-cta {
+.vellora-video-cta {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -169,47 +169,47 @@
     transition: transform .2s ease, background .2s ease;
 }
 
-.mittyco-video-cta:hover {
+.vellora-video-cta:hover {
     background: #16452f;
     transform: translateY(-2px);
 }
 
-.mittyco-video-section--contact {
+.vellora-video-section--contact {
     width: 100%;
     padding-top: 0;
     padding-bottom: 68px;
 }
 
 @media (max-width: 900px) {
-    .mittyco-story-feature {
+    .vellora-story-feature {
         grid-template-columns: 1fr;
     }
 
-    .mittyco-story-note {
+    .vellora-story-note {
         min-height: 230px;
     }
 }
 
 @media (max-width: 620px) {
-    .mittyco-video-section {
+    .vellora-video-section {
         width: min(100% - 24px, 1440px);
         padding: 42px 0 48px;
     }
 
-    .mittyco-video-section--contact {
+    .vellora-video-section--contact {
         width: 100%;
         padding-top: 0;
     }
 
-    .mittyco-story-heading {
+    .vellora-story-heading {
         display: block;
     }
 
-    .mittyco-video-intro {
+    .vellora-video-intro {
         margin-top: 12px;
     }
 
-    .mittyco-story-grid {
+    .vellora-story-grid {
         grid-template-columns: 1fr;
     }
 

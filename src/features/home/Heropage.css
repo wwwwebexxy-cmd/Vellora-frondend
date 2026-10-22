@@ -609,10 +609,10 @@
     transform: scale(1.2);
 }
 
-/* Mittyco home page uses one focused hero banner. The old carousel rules are
+/* Vellora home page uses one focused hero banner. The old carousel rules are
    kept above for legacy dashboard previews, while the storefront renders only
    this single, full-width banner. */
-.mittyco-single-hero {
+.vellora-single-hero {
     width: 100%;
     height: clamp(280px, 32vw, 460px);
     margin-top: 80px;
@@ -620,14 +620,14 @@
     overflow: hidden;
 }
 
-.mittyco-single-hero-image-wrap {
+.vellora-single-hero-image-wrap {
     width: 100%;
     height: 100%;
     background: #FBFAF4;
     overflow: hidden;
 }
 
-.mittyco-single-hero-image {
+.vellora-single-hero-image {
     display: block;
     width: 100%;
     height: 100%;
@@ -636,7 +636,7 @@
 }
 
 @media (max-width: 760px) {
-    .mittyco-single-hero {
+    .vellora-single-hero {
         height: 280px;
         margin-top: 80px;
     }

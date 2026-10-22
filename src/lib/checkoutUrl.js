@@ -1,7 +1,7 @@
 const DEFAULT_CHECKOUT_HOSTS = ["checkout.stripe.com"];
 
 function allowedCheckoutHosts() {
-    const configuredHosts = String(import.meta.env.VITE_CHECKOUT_ALLOWED_HOSTS || "").trim();
+    const configuredHosts = String(import.meta.env.VITE_VELLORA_CHECKOUT_ALLOWED_HOSTS || "").trim();
     if (!configuredHosts) return DEFAULT_CHECKOUT_HOSTS;
 
     return configuredHosts

@@ -11,8 +11,8 @@ let csrfToken = "";
 function redirectToLogin() {
     clearAuthSession();
     const normalizedPath = window.location.pathname.toLowerCase();
-    const isOrderDashboardPath = normalizedPath.startsWith("/mittyco-dashboard") || normalizedPath.startsWith("/order-dashboard") || normalizedPath.startsWith("/orderdashboard");
-    const path = isOrderDashboardPath ? "/mittyco-dashboard/admin-login" : "/login";
+    const isOrderDashboardPath = normalizedPath.startsWith("/vellora-dashboard") || normalizedPath.startsWith("/order-dashboard") || normalizedPath.startsWith("/orderdashboard");
+    const path = isOrderDashboardPath ? "/vellora-dashboard/admin-login" : "/login";
     if (window.location.pathname !== path) window.location.href = path;
 }
 

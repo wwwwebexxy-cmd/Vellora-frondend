@@ -139,7 +139,7 @@ const OrderDetails = () => {
 
                     <button
                         className="admin-print-btn"
-                        onClick={() => navigate(`/mittyco-dashboard/invoice/${order.id}`)}
+                        onClick={() => navigate(`/vellora-dashboard/invoice/${order.id}`)}
                     >
                         🖨 Print Invoice
                     </button>

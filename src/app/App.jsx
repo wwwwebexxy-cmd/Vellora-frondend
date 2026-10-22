@@ -39,7 +39,7 @@ function App() {
     if (!authReady) return <div aria-live="polite" aria-label="Loading application" className="app-loading"><div className="app-loading-card" aria-hidden="true"><span className="skeleton app-loading-logo" /><span className="skeleton app-loading-line wide" /><span className="skeleton app-loading-line" /></div></div>;
 
     const normalizedPath = location.pathname.toLowerCase();
-    const isAdminPage = normalizedPath.startsWith("/mittyco-dashboard") || normalizedPath.startsWith("/orderdashboard") || normalizedPath.startsWith("/order-dashboard");
+    const isAdminPage = normalizedPath.startsWith("/vellora-dashboard") || normalizedPath.startsWith("/orderdashboard") || normalizedPath.startsWith("/order-dashboard");
 
     return (
         <>

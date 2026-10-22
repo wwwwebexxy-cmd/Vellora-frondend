@@ -1,6 +1,6 @@
 import "./../Footer.css";
 
-import footerlogo from './../assets/mittyco/mittyco-logo-transparent.png'
+import footerlogo from './../assets/vellora/vellora-logo-transparent.png'
 import { Link } from 'react-router-dom';
 import { FaInstagram, FaEnvelope, FaMapMarkerAlt, } from "react-icons/fa";
 function Footer() {
@@ -12,7 +12,7 @@ function Footer() {
                 <div className="footer-container">
 
                     <div className="footer-column brand">
-                        <img src={footerlogo} alt="Mittyco — Nature's goodness delivered" className="footer-logo" />
+                        <img src={footerlogo} alt="Vellora — Nature's goodness delivered" className="footer-logo" />
                         <p>Authentic coconut oils and homemade pickles from our kitchen in Kannur, Kerala.<br />FSSAI No: 21325250000662</p>
                     </div>
 
@@ -20,7 +20,7 @@ function Footer() {
                         <h3>Follow Us</h3>
 
                         <div className="social-icons">
-                            <a href="https://www.instagram.com/mi_ttyco/" target="_blank" rel="noreferrer" aria-label="Mittyco on Instagram">
+                            <a href="https://www.instagram.com/mi_ttyco/" target="_blank" rel="noreferrer" aria-label="Vellora on Instagram">
                                 <FaInstagram />
                             </a>
                         </div>
@@ -55,7 +55,7 @@ function Footer() {
 
                         <ul className="contact">
                             <li>
-                                <FaEnvelope />  <a href="mailto:infomittyco@gmail.com">infomittyco@gmail.com</a>
+                                <FaEnvelope />  <a href="mailto:infovellora@gmail.com">infovellora@gmail.com</a>
                             </li>
 
                             <li>
@@ -78,7 +78,7 @@ function Footer() {
             </footer>
 
             <div className="copyright">
-                © 2026 Mittyco. Nature&apos;s goodness delivered.
+                © 2026 Vellora. Nature&apos;s goodness delivered.
             </div>
 
         </div>

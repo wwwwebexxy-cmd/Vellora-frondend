@@ -5,7 +5,7 @@ import New_Arrival_Home from "./components/New_Arrival_Home";
 import HomepageProductSection from "./components/HomepageProductSection";
 import HomepageBrandSection from "./components/HomepageBrandSection";
 import HomepageTrustBenefits from "./components/HomepageTrustBenefits";
-import MittycoVideoSection from "./components/MittycoVideoSection";
+import VelloraVideoSection from "./components/VelloraVideoSection";
 import Homepage_Query from "./queries/Homepage_Query";
 import Product_Query from "../sale/queries/Product_Query";
 import ContactUs from "../../components/Contact";
@@ -95,7 +95,7 @@ function Home() {
 
             <HomepageTrustBenefits benefits={asArray(homepageData.trust_benefits)} />
 
-            <MittycoVideoSection />
+            <VelloraVideoSection />
 
             <ContactUs />
         </main>

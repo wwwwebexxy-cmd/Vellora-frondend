@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import "../Heropage.css";
 import { getImageUrl } from "../../../utils/imageUrl";
 import Hero_Query from "../queries/Hero_Query";
-import fallbackHeroImage from "../../../assets/mittyco/pickle-range.jpeg";
+import fallbackHeroImage from "../../../assets/vellora/pickle-range.jpeg";
 
 const FALLBACK_HERO_SLIDES = [
     {
         id: "fallback-hero",
-        subtitle: "AUTHENTICALLY MITTYCO",
+        subtitle: "AUTHENTICALLY VELLORA",
         title: "Flavours made with care",
         description: "Discover homemade Kerala flavours crafted for every meal.",
         button_text: "Shop the collection",
@@ -53,12 +53,12 @@ function Heropage() {
         <div className="hero-page-wrapper">
             <section
                 className="hero-split-layout single"
-                aria-label="Mittyco featured products"
+                aria-label="Vellora featured products"
             >
                 <div className="hero-carousel-section" aria-live="polite">
                     {heroSlides.map((slide, index) => {
                         const image = getHeroImage(slide.image || slide.banner_image || slide.image_url);
-                        const title = getHeroCopy(slide.title, slide.heading) || "Mittyco favourites";
+                        const title = getHeroCopy(slide.title, slide.heading) || "Vellora favourites";
                         return (
                             <div
                                 key={slide.id ?? `hero-${index}`}

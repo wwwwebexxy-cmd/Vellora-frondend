@@ -105,7 +105,7 @@ function Signup() {
 
             if (isSuperAdminUser(user)) {
 
-                navigate("/mittyco-dashboard");
+                navigate("/vellora-dashboard");
 
             } else {
 
@@ -151,7 +151,7 @@ function Signup() {
 
                         <h1>Create Account</h1>
 
-                        <p>Create your Mittyco account and start shopping.</p>
+                        <p>Create your Vellora account and start shopping.</p>
 
                     </div>
 

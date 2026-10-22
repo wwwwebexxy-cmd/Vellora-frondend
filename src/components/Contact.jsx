@@ -29,7 +29,7 @@ const ContactUs = () => {
             return;
         }
 
-        const text = `Hello Mittyco Team,
+        const text = `Hello Vellora Team,
 
 Name: ${name}
 
