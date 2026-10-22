@@ -12,14 +12,14 @@
 .clear_btn{
     border: none;
     background-color: transparent;
-    color: #87002b;
+    color: #171513;
 }
 
 .filter_group label {
     margin-bottom: 8px;
     font-size: .95rem;
     font-weight: 500;
-    color: #1F5B3E;
+    color: #171513;
 }
 
 
@@ -39,11 +39,11 @@
     justify-content: space-between;
     align-items: center;
 
-    border: 1px solid #DCE8DC;
+    border: 1px solid #e5d7c2;
     border-radius: 10px;
 
-    background: #FBFAF4;
-    color: #1F5B3E;
+    background: #fbf6ee;
+    color: #171513;
 
     font-size: .95rem;
     cursor: pointer;
@@ -52,12 +52,12 @@
 }
 
 .select-btn:hover {
-    border-color: #87002b;
+    border-color: #171513;
 }
 
 .select-btn:focus {
     outline: none;
-    border-color:#87002b ;
+    border-color:#171513 ;
     box-shadow: 0 0 0 3px rgba(156, 107, 48, .15);
 }
 
@@ -65,7 +65,7 @@
 /* Arrow */
 .arrow {
     font-size: 18px;
-    color: #77907F;
+    color: #85796b;
     transition: transform .25s ease;
 }
 
@@ -87,7 +87,7 @@
 
     list-style: none;
 
-    background: #FBFAF4;
+    background: #fbf6ee;
 
     border: 1px solid #ececec;
     border-radius: 10px;
@@ -104,7 +104,7 @@
 /* Option */
 .select-option {
     padding: 12px 14px;
-    color: #1F5B3E;
+    color: #171513;
     cursor: pointer;
     transition: .2s;
 }
@@ -113,13 +113,13 @@
 /* Hover */
 .select-option:hover {
     background: rgba(156, 107, 48, .08);
-    color: #9c6b30;
+    color: #a97824;
 }
 
 
 /* Active */
 .select-option.active {
-    background: #87002b;
+    background: #171513;
     color: #FFFFFF;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .select-options::-webkit-scrollbar-track {
-    background: #FBFAF4;
+    background: #fbf6ee;
 }
 
 .select-options::-webkit-scrollbar-thumb {
@@ -139,13 +139,13 @@
 }
 
 .select-options::-webkit-scrollbar-thumb:hover {
-    background: #9c6b30;
+    background: #a97824;
 }
 .apply_btn{
     width: 100%;
     border: none;
     border-radius: 10px;
-    background-color: #87002b;
+    background-color: #171513;
     padding: 15px 10px;
     text-align: center;
     color: #FFFFFF;

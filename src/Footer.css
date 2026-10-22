@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    background: #1F5B3E;
+    background: #171513;
     padding: 50px 8%;
     color: #FFFFFF;
 }
@@ -29,7 +29,7 @@
 }
 
 .footer-column h3 {
-    color: #F4C430;
+    color: #c79a43;
     margin-bottom: 18px;
     font-size: 18px;
     text-transform: uppercase;
@@ -51,10 +51,10 @@
 }
 
 .footer-column ul li:hover {
-    color: #F4C430;
+    color: #c79a43;
 }
 .footer-column a:hover {
-    color: #F4C430;
+    color: #c79a43;
 }
 .footer-column a{
     color: rgba(255,255,255,0.7);
@@ -64,7 +64,7 @@
 }
 
 .footer-column a:focus-visible {
-    outline: 2px solid #F4C430;
+    outline: 2px solid #c79a43;
     outline-offset: 3px;
     border-radius: 2px;
 }
@@ -73,10 +73,10 @@
     display: flex;
     gap: 18px;
     font-size: 20px;
-    color: #F4C430;
+    color: #c79a43;
 }
 .social-icons a{
-    color: #F4C430;
+    color: #c79a43;
 }
 
 .social-icons a {
@@ -120,7 +120,7 @@
 }
 
 .copyright {
-    background: #17452F;
+    background: #000000;
     color: rgba(255,255,255,0.85);
     height: 40px;
     display: flex;

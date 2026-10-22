@@ -1,0 +1,213 @@
+/* Vellora dashboard brand layer.
+   This file is loaded last so every admin view uses the logo palette. */
+:root {
+    --vellora-dashboard-ink: #171513;
+    --vellora-dashboard-ink-soft: #3c352c;
+    --vellora-dashboard-gold: #c79a43;
+    --vellora-dashboard-gold-dark: #a97824;
+    --vellora-dashboard-cream: #fbf6ee;
+    --vellora-dashboard-surface: #fffdf9;
+    --vellora-dashboard-soft: #f5ead6;
+    --vellora-dashboard-line: #e5d7c2;
+    --vellora-dashboard-muted: #766b5c;
+}
+
+.admin-app,
+.admin-shell {
+    background: var(--vellora-dashboard-cream) !important;
+    color: var(--vellora-dashboard-ink) !important;
+}
+
+.admin-app .admin-sidebar,
+.admin-shell .admin-sidebar {
+    background: var(--vellora-dashboard-surface) !important;
+    border-color: var(--vellora-dashboard-line) !important;
+}
+
+.admin-app .admin-brand {
+    height: 118px;
+    justify-content: center;
+    padding: 12px 18px;
+    border-color: var(--vellora-dashboard-line) !important;
+}
+
+.admin-app .admin-brand-logo {
+    width: 116px;
+    height: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.admin-app .admin-brand-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.admin-app .admin-nav-label,
+.admin-app .admin-eyebrow,
+.admin-app .admin-user small,
+.admin-app .admin-muted,
+.admin-shell .sidebar-label,
+.admin-shell .eyebrow {
+    color: var(--vellora-dashboard-gold-dark) !important;
+}
+
+.admin-app .admin-nav-item,
+.admin-shell .nav-item,
+.admin-shell .logout {
+    color: var(--vellora-dashboard-muted);
+}
+
+.admin-app .admin-nav-item:hover,
+.admin-app .admin-nav-item.active,
+.admin-shell .nav-item:hover,
+.admin-shell .nav-item.active {
+    background: var(--vellora-dashboard-soft) !important;
+    color: var(--vellora-dashboard-ink) !important;
+}
+
+.admin-app .admin-nav-item.active {
+    box-shadow: inset 3px 0 0 var(--vellora-dashboard-gold);
+}
+
+.admin-app .admin-user > span,
+.admin-shell .brand-mark {
+    background: var(--vellora-dashboard-gold) !important;
+    color: var(--vellora-dashboard-ink) !important;
+}
+
+.admin-app .admin-content,
+.admin-shell .admin-main {
+    background: transparent !important;
+}
+
+.admin-app .admin-topbar h1,
+.admin-app .admin-page-header h2,
+.admin-app .admin-panel-heading h3,
+.admin-app .admin-modal-heading h3,
+.admin-shell .topbar h1,
+.admin-shell .page-title-row h2,
+.admin-shell .detail-heading h2,
+.admin-shell .quick-actions h3,
+.admin-shell .panel-heading h2,
+.admin-shell .coming-soon h2 {
+    color: var(--vellora-dashboard-ink) !important;
+}
+
+.admin-app .admin-button.primary,
+.admin-app .admin-brand-mark,
+.admin-app .hero-save-button,
+.admin-shell .export-button,
+.admin-shell .primary-button {
+    background: var(--vellora-dashboard-gold) !important;
+    border-color: var(--vellora-dashboard-gold) !important;
+    color: var(--vellora-dashboard-ink) !important;
+}
+
+.admin-app .admin-button.primary:hover,
+.admin-app .hero-save-button:hover,
+.admin-shell .export-button:hover,
+.admin-shell .primary-button:hover {
+    background: var(--vellora-dashboard-gold-dark) !important;
+    border-color: var(--vellora-dashboard-gold-dark) !important;
+}
+
+.admin-app .admin-button.secondary,
+.admin-app .hero-secondary-button,
+.admin-shell .filter-button,
+.admin-shell .icon-button,
+.admin-shell .mobile-menu,
+.admin-shell .pagination button {
+    background: var(--vellora-dashboard-surface) !important;
+    border-color: var(--vellora-dashboard-line) !important;
+    color: var(--vellora-dashboard-ink-soft) !important;
+}
+
+.admin-app .admin-button.secondary:hover,
+.admin-app .hero-secondary-button:hover,
+.admin-shell .filter-button:hover {
+    background: var(--vellora-dashboard-soft) !important;
+    border-color: var(--vellora-dashboard-gold) !important;
+    color: var(--vellora-dashboard-ink) !important;
+}
+
+.admin-app .admin-panel,
+.admin-app .admin-stat-card,
+.admin-app .admin-detail-card,
+.admin-app .product-view-card,
+.admin-app .product-tool-section,
+.admin-shell .stat-card,
+.admin-shell .orders-panel,
+.admin-shell .detail-page,
+.admin-shell .detail-card,
+.admin-shell .resource-page,
+.admin-shell .coming-soon {
+    background: var(--vellora-dashboard-surface) !important;
+    border-color: var(--vellora-dashboard-line) !important;
+}
+
+.admin-app .admin-panel-heading,
+.admin-app .admin-filters,
+.admin-app .admin-search,
+.admin-app .admin-select,
+.admin-app .admin-date,
+.admin-app .admin-table th,
+.admin-app .admin-table td,
+.admin-shell th,
+.admin-shell td,
+.admin-shell .filters label {
+    border-color: var(--vellora-dashboard-line) !important;
+}
+
+.admin-app .admin-filters,
+.admin-app .admin-table th,
+.admin-shell th,
+.admin-shell .order-filters {
+    background: var(--vellora-dashboard-soft) !important;
+}
+
+.admin-app input:focus,
+.admin-app select:focus,
+.admin-app textarea:focus,
+.admin-shell .edit-modal input:focus {
+    border-color: var(--vellora-dashboard-gold) !important;
+    box-shadow: 0 0 0 3px rgba(199, 154, 67, .2) !important;
+}
+
+.admin-app input[type="checkbox"],
+.admin-app input[type="radio"],
+.admin-shell input[type="checkbox"],
+.admin-shell input[type="radio"] {
+    accent-color: var(--vellora-dashboard-gold);
+}
+
+.admin-app .admin-panel-heading > svg,
+.admin-app .admin-detail-card h3 svg,
+.admin-app .admin-loading .spin,
+.admin-app .admin-back-link,
+.admin-shell .quick-actions > div,
+.admin-shell .detail-card h3 svg,
+.admin-shell .back-link {
+    color: var(--vellora-dashboard-gold-dark) !important;
+}
+
+.admin-app .admin-scrim,
+.admin-shell .sidebar-scrim {
+    background: rgba(23, 21, 19, .48) !important;
+}
+
+@media (max-width: 700px) {
+    .admin-app .admin-brand {
+        height: 82px;
+        padding: 10px 6px;
+    }
+
+    .admin-app .admin-brand-logo {
+        width: 52px;
+        height: 64px;
+    }
+}

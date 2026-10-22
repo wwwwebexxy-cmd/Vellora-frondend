@@ -1,8 +1,10 @@
 import "./../Footer.css";
 
-import footerlogo from './../assets/vellora/vellora-logo-transparent.png'
+import footerlogo from './../assets/vellora/vellora-logo-transparent-vellora.png'
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaEnvelope, FaMapMarkerAlt, } from "react-icons/fa";
+import { FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6";
+import { WHATSAPP_DISPLAY_NUMBER, WHATSAPP_NUMBER } from "../config/contact";
 function Footer() {
     return (
         <div>
@@ -12,16 +14,16 @@ function Footer() {
                 <div className="footer-container">
 
                     <div className="footer-column brand">
-                        <img src={footerlogo} alt="Vellora — Nature's goodness delivered" className="footer-logo" />
-                        <p>Authentic coconut oils and homemade pickles from our kitchen in Kannur, Kerala.<br />FSSAI No: 21325250000662</p>
+                        <img src={footerlogo} alt="Vellora Online Store" className="footer-logo" />
+                        <p>Vellora is your one-stop online store for fashion, accessories, home essentials, gifts, electronics and more.<br />Everyday Finds. Exceptional Style.</p>
                     </div>
 
                     <div className="footer-column social-column">
                         <h3>Follow Us</h3>
 
                         <div className="social-icons">
-                            <a href="https://www.instagram.com/mi_ttyco/" target="_blank" rel="noreferrer" aria-label="Vellora on Instagram">
-                                <FaInstagram />
+                            <a href="https://www.tiktok.com/@vellora707" target="_blank" rel="noreferrer" aria-label="Vellora on TikTok">
+                                <FaTiktok />
                             </a>
                         </div>
                     </div>
@@ -55,11 +57,10 @@ function Footer() {
 
                         <ul className="contact">
                             <li>
-                                <FaEnvelope />  <a href="mailto:infovellora@gmail.com">infovellora@gmail.com</a>
+                                <FaMapMarkerAlt /> Al Shamshi Building, Zurff Industrial Area, Ajman, United Arab Emirates
                             </li>
-
                             <li>
-                                <FaMapMarkerAlt /> 59/A, Panayanthatta, Thollathuvayal, Nhekly (P.O.), Peringome, Payyanur, Kannur, Kerala 670353
+                                <FaWhatsapp /> <a href={`https://wa.me/${WHATSAPP_NUMBER}`}>{WHATSAPP_DISPLAY_NUMBER}</a>
                             </li>
                         </ul>
                     </div>
@@ -78,7 +79,7 @@ function Footer() {
             </footer>
 
             <div className="copyright">
-                © 2026 Vellora. Nature&apos;s goodness delivered.
+                © 2026 Vellora. Everyday Finds. Exceptional Style.
             </div>
 
         </div>

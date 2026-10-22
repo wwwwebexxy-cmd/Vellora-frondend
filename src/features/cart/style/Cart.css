@@ -43,7 +43,7 @@
     align-items: center;
     gap: 18px;
     padding: 20px 0;
-    border-bottom: 1px solid #EDF3E9;
+    border-bottom: 1px solid #f1e8dc;
 }
 
 .product:last-child {
@@ -70,7 +70,7 @@
 }
 
 .product-details p {
-    color: #1F5B3E;
+    color: #171513;
     font-size: 14px;
 }
 
@@ -89,7 +89,7 @@
     border: none;
     border-radius: 6px;
     background: #FFF5E5;
-    color: #F4C430;
+    color: #c79a43;
     font-size: 20px;
     cursor: pointer;
     display: flex;
@@ -109,7 +109,7 @@
 .cart_remove-btn {
     border: none;
     background: none;
-    color: #F4C430;
+    color: #c79a43;
     cursor: pointer;
     font-size: 14px;
 }
@@ -162,7 +162,7 @@
     flex: 1;
     padding: 12px;
     border-radius: 8px;
-    border: 1px solid #DCE8DC;
+    border: 1px solid #e5d7c2;
     margin: 0;
     font-size: 15px;
 }
@@ -171,14 +171,14 @@
     width: 120px;
     border: none;
     border-radius: 8px;
-    background: #F4C430;
+    background: #c79a43;
     color: #FFFFFF;
     cursor: pointer;
     transition: .3s;
 }
 
 .coupon button:hover {
-    background: #DCA900;
+    background: #a97824;
 }
 
 .coupon-inactive-warning {
@@ -202,17 +202,17 @@
 }
 
 .price-row {
-    color: #1F5B3E;
+    color: #171513;
     font-size: 15px;
 }
 
 .total-row {
     margin-top: 25px;
     padding-top: 20px;
-    border-top: 1px solid #EDF3E9;
+    border-top: 1px solid #f1e8dc;
     font-size: 28px;
     font-weight: bold;
-    color: #F4C430;
+    color: #c79a43;
     font-family: Georgia, serif;
 }
 
@@ -224,7 +224,7 @@
     padding: 16px;
     border: none;
     border-radius: 8px;
-    background: #F4C430;
+    background: #c79a43;
     color: #FFFFFF;
     font-size: 16px;
     cursor: pointer;
@@ -232,7 +232,7 @@
 }
 
 .continue-btn:hover {
-    background: #DCA900;
+    background: #a97824;
 }
 
 /* TABLET */

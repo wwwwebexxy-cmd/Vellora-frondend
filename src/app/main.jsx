@@ -19,9 +19,9 @@ const application = (
       duration={3000}
       toastOptions={{
         style: {
-          background: "#FFF8D7",
-          color: "#1F5B3E",
-          border: "1px solid #F5E5A6",
+          background: "#f5ead6",
+          color: "#171513",
+          border: "1px solid #e5d7c2",
           borderRadius: "16px",
           padding: "14px 18px",
           fontWeight: "700",

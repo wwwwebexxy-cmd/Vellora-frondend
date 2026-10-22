@@ -43,10 +43,10 @@ export default function ProductHighlightRail({ highlights = [], placement = "rai
     const Icon = ICONS[current.icon_key] || FiTag;
     const backgroundColor = /^#[0-9A-Fa-f]{6}$/.test(current.background_color || "")
         ? current.background_color
-        : "#EAF4FF";
+        : "#f5ead6";
     const textColor = /^#[0-9A-Fa-f]{6}$/.test(current.text_color || "")
         ? current.text_color
-        : "#173B35";
+        : "#171513";
     const label = current.text;
 
     return (

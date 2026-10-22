@@ -3,37 +3,45 @@
 :root {
   /* ===== VELLORA BRAND DESIGN TOKENS ===== */
 
-  /* Primary Colors */
-  --primary-orange: #f4c430;
-  --primary-orange-hover: #dca900;
-  --primary-orange-light: #fff8d7;
-  --primary-orange-bg: rgba(244, 196, 48, 0.12);
+  /* Primary Colors - Vellora gold */
+  --primary-orange: #c79a43;
+  --primary-orange-hover: #a97824;
+  --primary-orange-light: #f5ead6;
+  --primary-orange-bg: rgba(199, 154, 67, 0.14);
 
-  /* Slate Colors */
-  --primary-slate: #1f5b3e;
-  --primary-slate-hover: #17452f;
-  --primary-slate-light: #4f8062;
-  --primary-slate-muted: #7a9986;
+  /* Ink Colors - Vellora black */
+  --primary-slate: #171513;
+  --primary-slate-hover: #000000;
+  --primary-slate-light: #3c352c;
+  --primary-slate-muted: #766b5c;
 
-  /* Background & Surfaces */
-  --background: #fbfaf4;
-  --surface-card: #ffffff;
-  --surface-elevated: #fffef9;
+  /* Background & Surfaces - Vellora cream */
+  --background: #fbf6ee;
+  --surface-card: #fffdf9;
+  --surface-elevated: #fffaf2;
 
   /* Text */
-  --text-primary: #183d2b;
-  --text-secondary: #50705c;
-  --text-muted: #77907f;
-  --text-on-dark: #FFFFFF;
+  --text-primary: #1d1a17;
+  --text-secondary: #5f554a;
+  --text-muted: #85796b;
+  --text-on-dark: #fffaf2;
 
   /* Borders */
-  --border-color: #dce8dc;
-  --border-light: #edf3e9;
+  --border-color: #e5d7c2;
+  --border-light: #f1e8dc;
+
+  /* Explicit brand aliases for new components */
+  --brand-gold: #c79a43;
+  --brand-gold-hover: #a97824;
+  --brand-gold-soft: #f5ead6;
+  --brand-ink: #171513;
+  --brand-ink-soft: #3c352c;
+  --brand-cream: #fbf6ee;
 
   /* Misc */
-  --shadow-sm: 0 2px 8px rgba(31, 91, 62, 0.08);
-  --shadow-md: 0 8px 24px rgba(31, 91, 62, 0.11);
-  --shadow-lg: 0 16px 40px rgba(31, 91, 62, 0.14);
+  --shadow-sm: 0 2px 8px rgba(29, 26, 23, 0.08);
+  --shadow-md: 0 8px 24px rgba(29, 26, 23, 0.11);
+  --shadow-lg: 0 16px 40px rgba(29, 26, 23, 0.14);
 }
 
 body {
@@ -58,8 +66,8 @@ html {
 
 /* Selection highlight using brand color */
 ::selection {
-  background: rgba(244, 196, 48, 0.25);
-  color: #183d2b;
+  background: rgba(199, 154, 67, 0.25);
+  color: #1d1a17;
 }
 
 /* --- Global Skeleton Loading --- */

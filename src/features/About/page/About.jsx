@@ -1,9 +1,10 @@
 import "../styles/About.css";
 import { Link, useNavigate } from "react-router-dom";
-import { FaInstagram, FaLeaf, FaShieldAlt } from "react-icons/fa";
+import { FaLeaf, FaShieldAlt } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6";
 import velloraLogo from "../../../assets/vellora/vellora-logo.jpeg";
-import coldCoconutOil from "../../../assets/vellora/coconut-oil-cold.jpeg";
-import pickleRange from "../../../assets/vellora/pickle-range.jpeg";
+import velloraBrandSheet from "../../../assets/vellora/vellora-brand-sheet.jpeg";
+import lifestyleVibe from "../../../assets/vellora_lifestyle_vibe.png";
 
 const About = () => {
     const navigate = useNavigate();
@@ -13,46 +14,46 @@ const About = () => {
             <section className="about-modern-hero about-fade">
                 <div className="hero-text-content">
                     <span className="hero-eyebrow">THE VELLORA STORY</span>
-                    <h1 className="hero-display">Good food starts with <span className="hero-italic">good ingredients.</span></h1>
-                    <p className="hero-subtext">Vellora is a Kerala food brand built around the things we value at home: natural ingredients, familiar recipes, careful preparation, and food worth sharing.</p>
-                    <button className="hero-modern-btn" onClick={() => navigate("/shop")}>Explore our products <span className="arrow">→</span></button>
+                    <h1 className="hero-display">Everyday finds with <span className="hero-italic">exceptional style.</span></h1>
+                    <p className="hero-subtext">Vellora is your one-stop online store for everything you love — from fashion and accessories to home essentials, gifts, electronics and more.</p>
+                    <button className="hero-modern-btn" onClick={() => navigate("/shop")}>Explore our collections <span className="arrow">→</span></button>
                 </div>
                 <div className="hero-image-content">
-                    <div className="image-frame vellora-about-image-frame"><img src={coldCoconutOil} alt="Vellora cold pressed coconut oil" /></div>
+                    <div className="image-frame vellora-about-image-frame"><img src={velloraBrandSheet} alt="Vellora online store collection" /></div>
                 </div>
             </section>
 
             <section className="about-modern-story about-fade">
                 <div className="story-left">
                     <div className="story-sticky">
-                        <h2>Rooted in tradition. Made for today.</h2>
-                        <p>Our coconut oils and homemade pickles are inspired by the flavours and methods passed down through Kerala homes. Every product is made to feel honest, useful, and close to home.</p>
-                        <p>We make room for the details that matter: trusted ingredients, clear labelling, hygienic packing, and the taste of food prepared with patience.</p>
+                        <h2>More than just shopping.</h2>
+                        <p>Vellora brings together stylish, high-quality products that fit your lifestyle — from everyday essentials to thoughtful gifts and standout finds.</p>
+                        <p>We focus on convenience, trust and exceptional service, so every collection feels easy to discover and enjoyable to bring home.</p>
                         <div className="story-highlights">
-                            <div className="highlight-box"><span className="highlight-title">Natural by choice</span><span className="highlight-text">No unnecessary shortcuts. Just carefully prepared oils and pickles.</span></div>
-                            <div className="highlight-box"><span className="highlight-title">Made in Kannur</span><span className="highlight-text">Proudly produced and packed in Kerala for families everywhere.</span></div>
+                            <div className="highlight-box"><span className="highlight-title">Premium quality</span><span className="highlight-text">Curated products selected for style, usefulness and everyday value.</span></div>
+                            <div className="highlight-box"><span className="highlight-title">Made for your lifestyle</span><span className="highlight-text">Fashion, accessories, home and living, gifts, electronics and more.</span></div>
                         </div>
                     </div>
                 </div>
-                <div className="story-right"><img src={pickleRange} alt="Vellora homemade pickle collection" className="story-vibe-img" /></div>
+                <div className="story-right"><img src={lifestyleVibe} alt="Vellora lifestyle collection" className="story-vibe-img" /></div>
             </section>
 
             <section className="about-human-values about-fade">
                 <div className="values-header">
-                    <img className="about-brand-mark" src={velloraLogo} alt="Vellora — Nature's goodness delivered" />
-                    <h2>What Vellora stands for</h2>
-                    <p>Simple food. Thoughtful making. A taste you can trust.</p>
+                    <img className="about-brand-mark" src={velloraLogo} alt="Vellora Online Store" />
+                    <h2>Why choose Vellora?</h2>
+                    <p>Premium, modern and classy — with everyday value at the heart of every collection.</p>
                 </div>
                 <div className="values-grid">
-                    <div className="value-card"><FaLeaf className="value-icon" /><h3>Honest ingredients</h3><p>We keep our recipes familiar and our promise clear: products made with care and nothing to hide.</p></div>
-                    <div className="value-card"><FaShieldAlt className="value-icon" /><h3>Careful quality</h3><p>From preparation to packing, every batch is handled with attention and respect for the people who enjoy it.</p></div>
-                    <div className="value-card"><FaInstagram className="value-icon" /><h3>Made to be shared</h3><p>Follow our journey and discover the everyday meals, flavours, and stories behind Vellora.</p><a className="about-social-link" href="https://www.instagram.com/mi_ttyco/" target="_blank" rel="noreferrer">@mi_ttyco ↗</a></div>
+                    <div className="value-card"><FaLeaf className="value-icon" /><h3>Premium quality</h3><p>Discover products chosen to bring style, convenience and confidence to your everyday life.</p></div>
+                    <div className="value-card"><FaShieldAlt className="value-icon" /><h3>Fast &amp; reliable delivery</h3><p>Shop with peace of mind through a smooth online experience and dependable customer care.</p></div>
+                    <div className="value-card"><FaTiktok className="value-icon" /><h3>Trendy &amp; unique collections</h3><p>Follow Vellora for new finds, fresh inspiration and more than just shopping.</p><a className="about-social-link" href="https://www.tiktok.com/@vellora707" target="_blank" rel="noreferrer">@vellora707 ↗</a></div>
                 </div>
             </section>
 
             <section className="about-modern-quote about-fade">
-                <blockquote>“Nature&apos;s goodness delivered — from our home in Kerala to yours.”</blockquote>
-                <div className="quote-author">— The Vellora family</div>
+                <blockquote>“Shop smart. Live beautiful.”</blockquote>
+                <div className="quote-author">— Vellora Online Store</div>
                 <Link to="/contact" className="about-contact-link">Talk to Vellora <span aria-hidden="true">→</span></Link>
             </section>
         </main>

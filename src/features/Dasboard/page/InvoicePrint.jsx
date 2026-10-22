@@ -4,6 +4,7 @@ import client from "../../../lib/ApiClient";
 import "../styles/Invoice.css";
 import { getImageUrl } from "../../../utils/imageUrl";
 import DirhamAmount from "../../../components/DirhamAmount";
+import { CONTACT_WHATSAPP_DISPLAY_NUMBER } from "../../../config/contact";
 
 const Invoice = () => {
 
@@ -115,11 +116,11 @@ const Invoice = () => {
                         </h1>
 
                         <p>
-                            59/A, Panayanthatta, Thollathuvayal, Nhekly (P.O.), Peringome, Payyanur, Kannur, Kerala 670353
+                            Al Shamshi Building, Zurff Industrial Area, Ajman, United Arab Emirates
                         </p>
 
                         <p>
-                            infovellora@gmail.com
+                            WhatsApp: {CONTACT_WHATSAPP_DISPLAY_NUMBER}
                         </p>
 
                     </div>
@@ -419,10 +420,10 @@ const Invoice = () => {
                         </p>
 
                         <p>
-                            Email :
+                            WhatsApp :
                             <strong>
                                 {" "}
-                                infovellora@gmail.com
+                                {CONTACT_WHATSAPP_DISPLAY_NUMBER}
                             </strong>
                         </p>
 

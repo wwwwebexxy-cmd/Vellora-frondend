@@ -9,23 +9,23 @@ const videos = {
     kerala: {
         src: "/vellora-videos/vellora-coconut-oil-story.mp4",
         poster: coconutPoster,
-        eyebrow: "Traditional coconut goodness",
-        title: "From Kerala coconuts to every home",
-        copy: "Vellora coconut oil is prepared with care and packed in Kannur, Kerala — bringing a familiar taste and trusted quality to everyday cooking.",
+        eyebrow: "Everyday lifestyle",
+        title: "Find something beautiful for every day",
+        copy: "Discover useful, stylish and thoughtfully selected products for every space, mood and moment.",
     },
     pickle: {
         src: "/vellora-videos/vellora-pickle-story.mp4",
         poster: picklePoster,
-        eyebrow: "Homemade goodness",
-        title: "Pickle, jar by jar",
-        copy: "Bold Kerala flavours made to bring rice, snacks, and everyday meals alive.",
+        eyebrow: "Curated collections",
+        title: "Style made easy",
+        copy: "Explore fresh finds across fashion, accessories, home and living, gifts, electronics and more.",
     },
     kitchen: {
         src: "/vellora-videos/vellora-kitchen-story.mp4",
         poster: kitchenPoster,
-        eyebrow: "Made with care",
-        title: "A taste of our kitchen",
-        copy: "Simple ingredients, honest recipes, and the warmth of food prepared with patience.",
+        eyebrow: "More to explore",
+        title: "More than just shopping",
+        copy: "Shop smart, live beautiful and enjoy a seamless experience from discovery to delivery.",
     },
 };
 
@@ -92,20 +92,20 @@ function VelloraVideoSection({ compact = false }) {
             <div className="vellora-story-block">
                 <div className="vellora-story-heading">
                     <div>
-                        <p className="vellora-video-eyebrow">MADE IN KERALA</p>
-                        <h2 id="vellora-video-heading">Rooted here. Made for every home.</h2>
+                        <p className="vellora-video-eyebrow">VELLORA ONLINE STORE</p>
+                        <h2 id="vellora-video-heading">Everyday finds. Exceptional style.</h2>
                     </div>
                     <p className="vellora-video-intro">
-                        From our production and packaging unit in Kannur, Vellora brings Kerala-made oils and pickles to your table.
+                        Vellora brings fashion, accessories, home essentials, gifts, electronics and more together in one easy-to-shop destination.
                     </p>
                 </div>
                 <div className="vellora-story-feature">
                     <BusinessVideo video={videos.kerala} featured />
                     <div className="vellora-story-note">
                         <span className="vellora-story-note-mark" aria-hidden="true">✦</span>
-                        <h3>Nature&apos;s goodness delivered</h3>
+                        <h3>Shop smart. Live beautiful.</h3>
                         <p>
-                            Honest ingredients, careful preparation, and the taste of a business built around real food and real families.
+                            Premium quality products, fast and reliable delivery, secure payments and dedicated customer support.
                         </p>
                         <Link to="/about" className="vellora-story-link">Our story <span aria-hidden="true">→</span></Link>
                     </div>
@@ -115,11 +115,11 @@ function VelloraVideoSection({ compact = false }) {
             <div className="vellora-story-block vellora-story-block--kitchen">
                 <div className="vellora-story-heading">
                     <div>
-                        <p className="vellora-video-eyebrow">FROM OUR KITCHEN</p>
-                        <h2>Made with care. Shared with love.</h2>
+                        <p className="vellora-video-eyebrow">DISCOVER VELLORA</p>
+                        <h2>Premium, modern and classy.</h2>
                     </div>
                     <p className="vellora-video-intro">
-                        Watch the flavours behind Vellora&apos;s homemade pickle collection and coconut oil range.
+                        Find trendy and unique collections selected to fit your lifestyle and make every day feel a little better.
                     </p>
                 </div>
                 <div className="vellora-story-grid">

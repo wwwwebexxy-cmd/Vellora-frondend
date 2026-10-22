@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./../Contact.css"
 import { getAuthValue } from "../features/auth/authUtils";
-import { CONTACT_WHATSAPP_NUMBER } from "../config/contact";
+import { CONTACT_WHATSAPP_DISPLAY_NUMBER, CONTACT_WHATSAPP_NUMBER } from "../config/contact";
 
 const ContactUs = () => {
     const [formData, setFormData] = useState(() => ({
@@ -58,14 +58,12 @@ Thank you.`;
                 </span>
 
                 <h1>
-                    We'd Love To Hear From You
+                    Everyday finds. Exceptional style.
                 </h1>
 
                 <p>
-                    Have a question about our collections,
-                    an order, or need assistance?
-                    Fill out the form below and send us
-                    a message directly on WhatsApp.
+                    Have a question about fashion, accessories, home and living, gifts, electronics or an order?
+                    Fill out the form below and send us a message directly on WhatsApp.
                 </p>
 
             </div>
@@ -80,35 +78,27 @@ Thank you.`;
 
                     <div className="info-box">
 
-                        <h4>Business Hours</h4>
+                        <h4>Our Address</h4>
 
                         <p>
-                            Monday - Friday
-                        </p>
-
-                        <p>
-                            9:00 AM - 6:00 PM
+                            Al Shamshi Building, Zurff Industrial Area, Ajman, United Arab Emirates
                         </p>
 
                     </div>
 
                     <div className="info-box">
 
-                        <h4>Response Time</h4>
+                        <h4>WhatsApp / Contact</h4>
 
-                        <p>
-                            We usually reply within a few business hours by email.
-                        </p>
+                        <a href={`https://wa.me/${CONTACT_WHATSAPP_NUMBER}`}>{CONTACT_WHATSAPP_DISPLAY_NUMBER}</a>
 
                     </div>
 
                     <div className="info-box">
 
-                        <h4>Need Immediate Help?</h4>
+                        <h4>Follow Vellora</h4>
 
-                        <p>
-                            WhatsApp us and our team will assist you as soon as possible.
-                        </p>
+                        <p>Find more everyday finds on TikTok: <a href="https://www.tiktok.com/@vellora707" target="_blank" rel="noreferrer">@vellora707</a></p>
 
                     </div>
 

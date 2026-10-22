@@ -22,7 +22,7 @@
 .vellora-checkout-title{
     font-size:34px;
     font-weight:600;
-    color: #1F5B3E;
+    color: #171513;
     margin-bottom:8px;
     letter-spacing:-.5px;
 }
@@ -63,7 +63,7 @@
 }
 
 .vellora-checkout-card:hover{
-    border-color: #DCE8DC;
+    border-color: #e5d7c2;
     box-shadow:0 8px 24px rgba(0,0,0,.06);
 }
 
@@ -78,12 +78,12 @@
 .vellora-checkout-card h2{
     font-size:21px;
     font-weight:600;
-    color: #1F5B3E;
+    color: #171513;
 }
 
 .vellora-add-address-btn{
     border:none;
-    background:#F4C430;
+    background:#c79a43;
     color: #FFFFFF;
     padding:10px 18px;
     border-radius:8px;
@@ -94,7 +94,7 @@
 }
 
 .vellora-add-address-btn:hover{
-    background:#DCA900;
+    background:#a97824;
 }
 
 .vellora-add-address-btn:active{
@@ -119,17 +119,17 @@
 
 .vellora-address-card:hover{
     border-color:#c7c7c7;
-    background:#FBFAF4;
+    background:#fbf6ee;
 }
 
 .vellora-address-card.active{
-    border-color:#F4C430;
+    border-color:#c79a43;
     background:#FFF5E5;
 }
 
 .vellora-address-card input{
     margin-top:4px;
-    accent-color:#F4C430;
+    accent-color:#c79a43;
 }
 
 .vellora-address-info{
@@ -140,13 +140,13 @@
 .vellora-address-info h4{
     font-size:17px;
     font-weight:600;
-    color: #1F5B3E;
+    color: #171513;
     margin-bottom:6px;
 }
 
 .vellora-address-info p{
     font-size:14px;
-    color: #1F5B3E;
+    color: #171513;
     line-height:1.6;
     margin-bottom:2px;
 }
@@ -170,13 +170,13 @@
 .vellora-payment-title{
     font-size:16px;
     font-weight:600;
-    color: #1F5B3E;
+    color: #171513;
     margin-bottom:5px;
 }
 
 .vellora-payment-card p{
     font-size:14px;
-    color: #1F5B3E;
+    color: #171513;
     line-height:1.6;
 }
 
@@ -193,13 +193,13 @@
 
 .vellora-payment-option:hover,
 .vellora-payment-option.active{
-    border-color:#F4C430;
+    border-color:#c79a43;
     background:#FFF8EC;
 }
 
 .vellora-payment-option input{
     margin-top:3px;
-    accent-color:#F4C430;
+    accent-color:#c79a43;
 }
 
 .vellora-payment-option span{
@@ -209,7 +209,7 @@
 }
 
 .vellora-payment-option strong{
-    color:#1F5B3E;
+    color:#171513;
     font-size:14px;
 }
 
@@ -224,7 +224,7 @@
     border:1px dashed #d7d7d7;
     border-radius:10px;
     text-align:center;
-    color: #1F5B3E;
+    color: #171513;
     font-size:15px;
 }
 .vellora-summary-item{
@@ -268,7 +268,7 @@
 .vellora-summary-details h4{
     font-size:16px;
     font-weight:600;
-    color: #1F5B3E;
+    color: #171513;
     margin-bottom:6px;
     line-height:1.4;
     overflow-wrap:anywhere;
@@ -277,14 +277,14 @@
 
 .vellora-summary-details p{
     font-size:13px;
-    color: #1F5B3E;
+    color: #171513;
     margin-bottom:4px;
 }
 
 .vellora-summary-price{
     font-size:17px;
     font-weight:600;
-    color: #1F5B3E;
+    color: #171513;
     white-space:nowrap;
 }
 
@@ -301,7 +301,7 @@
     align-items:center;
     margin-bottom:14px;
     font-size:15px;
-    color: #1F5B3E;
+    color: #171513;
 }
 
 .vellora-summary-row:last-child{
@@ -312,7 +312,7 @@
     min-width: 0;
     overflow-wrap: anywhere;
     font-weight:500;
-    color: #1F5B3E;
+    color: #171513;
 }
 
 .vellora-summary-row span:first-child{
@@ -329,7 +329,7 @@
 }
 
 .vellora-grand-total strong{
-    color:#1F5B3E;
+    color:#171513;
 }
 
 .vellora-shipping-free{
@@ -347,7 +347,7 @@
 .vellora-payment-note{
     margin-top:18px;
     font-size:13px;
-    color: #1F5B3E;
+    color: #171513;
     text-align:center;
     line-height:1.6;
 }
@@ -356,7 +356,7 @@
     height:52px;
     border:none;
     border-radius:10px;
-    background:#F4C430;
+    background:#c79a43;
     color: #FFFFFF;
     font-size:15px;
     font-weight:600;
@@ -365,7 +365,7 @@
 }
 
 .vellora-checkout-btn:hover{
-    background:#DCA900;
+    background:#a97824;
     box-shadow:0 10px 24px rgba(139,47,69,.22);
 }
 
@@ -386,7 +386,7 @@
     min-height:60vh;
     font-size:18px;
     font-weight:600;
-    color:#1F5B3E;
+    color:#171513;
 
 }
 
@@ -406,7 +406,7 @@
     margin:0;
     font-size:18px;
     font-weight:600;
-    color: #1F5B3E;
+    color: #171513;
 }
 
 .vellora-grand-total small{
@@ -420,7 +420,7 @@
     margin:0;
     font-size:28px;
     font-weight:700;
-    color:#F4C430;
+    color:#c79a43;
     letter-spacing:-.5px;
 }
 

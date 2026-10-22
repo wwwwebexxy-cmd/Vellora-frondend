@@ -22,11 +22,11 @@ body {
     padding-bottom: 30px;
     display: flex;
     align-items: center;
-    color: #6d0f2b;
+    color: #171513;
 }
 
 .toshop a {
-    color: #6d0f2b;
+    color: #171513;
 }
 
 /* Header */
@@ -59,7 +59,7 @@ body {
 
 .clear-btn {
     padding: 12px 22px;
-    background: #FBFAF4;
+    background: #fbf6ee;
     border: 1px solid #d7cfcf;
     border-radius: 8px;
     cursor: pointer;
@@ -67,7 +67,7 @@ body {
 
 .bag-btn {
     padding: 12px 22px;
-    background: #6d0f2b;
+    background: #171513;
     color: #FFFFFF;
     border: none;
     border-radius: 8px;
@@ -86,7 +86,7 @@ body {
     justify-items: center;
     gap: 12px;
     padding: 56px 20px;
-    color: #1F5B3E;
+    color: #171513;
     text-align: center;
 }
 
@@ -95,7 +95,7 @@ body {
     border: 0;
     border-radius: 999px;
     padding: 10px 18px;
-    background: #1F5B3E;
+    background: #171513;
     color: #fff;
     cursor: pointer;
     text-decoration: none;
@@ -114,7 +114,7 @@ body {
 
 .wishlist-card {
     min-width: 0;
-    background: #FBFAF4;
+    background: #fbf6ee;
     border-radius: 14px;
     overflow: hidden;
     position: relative;
@@ -142,7 +142,7 @@ body {
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    background: #FBFAF4;
+    background: #fbf6ee;
     border: none;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
     cursor: pointer;
@@ -164,7 +164,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.2px;
     font-size: 13px;
-    color: #1F5B3E;
+    color: #171513;
     /* Dark Wine Text color */
     font-weight: 700;
     margin-bottom: 5px;
@@ -186,14 +186,14 @@ body {
 .price {
     font-size: 17px;
     font-weight: 700;
-    color: #6d0f2b;
+    color: #171513;
     margin-bottom: 18px;
 }
 
 .wishlist-info button {
     width: 100%;
     padding: 13px;
-    background: #6d0f2b;
+    background: #171513;
     color: #FFFFFF;
     border: none;
     border-radius: 8px;
@@ -219,7 +219,7 @@ body {
 
 .recommend-header a {
     text-decoration: none;
-    color: #6d0f2b;
+    color: #171513;
     font-weight: 600;
 }
 
@@ -244,7 +244,7 @@ body {
     width: min(290px, 100%);
     max-width: 100%;
     min-width: 0;
-    background: #FBFAF4;
+    background: #fbf6ee;
     border-radius: 12px;
     overflow: hidden;
     padding-bottom: 16px;
@@ -265,7 +265,7 @@ body {
 .recommend-card p {
     padding: 0 16px;
     font-weight: 700;
-    color: #6d0f2b;
+    color: #171513;
 }
 
 .wishlist-card{
@@ -276,7 +276,7 @@ body {
     position:absolute;
     top:15px;
     left:15px;
-    background:#1F5B3E;
+    background:#171513;
     color: #FFFFFF;
     padding:6px 12px;
     border-radius:20px;
@@ -300,7 +300,7 @@ body {
 .wishlist-new-price{
     font-size:22px;
     font-weight:700;
-    color:#1F5B3E;
+    color:#171513;
 }
 
 /* Tablet */

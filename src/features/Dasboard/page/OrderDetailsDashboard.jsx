@@ -6,6 +6,7 @@ import client from "../../../lib/ApiClient";
 import DirhamAmount from "../../../components/DirhamAmount";
 import "../styles/Dashboard.css";
 import "../styles/LogoutTheme.css";
+import "../styles/VelloraDashboardTheme.css";
 
 const money = (value) => <DirhamAmount value={Number(value || 0)} useGrouping />;
 const date = (value) => value ? new Date(value).toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" }) : "—";

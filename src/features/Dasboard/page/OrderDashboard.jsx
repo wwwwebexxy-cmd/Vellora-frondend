@@ -17,7 +17,7 @@ import CouponUsageEditor from "./CouponUsageEditor";
 import WelcomeBonusEditor from "./WelcomeBonusEditor";
 import WelcomeBonusPage from "./WelcomeBonusPage";
 import TokenBlacklistPage from "./TokenBlacklistPage";
-import navbarLogo from "../../../assets/vellora/vellora-logo-transparent-dark.png";
+import navbarLogo from "../../../assets/vellora/vellora-logo-transparent-vellora.png";
 import { getImageUrl } from "../../../utils/imageUrl";
 import { logoutSession } from "../../../lib/ApiClient";
 import { getPasswordPolicyError } from "../../auth/passwordPolicy";
@@ -26,6 +26,7 @@ import DirhamAmount from "../../../components/DirhamAmount";
 import "../styles/AdminDashboard.css";
 import "../styles/LogoutTheme.css";
 import "../styles/AdminPolish.css";
+import "../styles/VelloraDashboardTheme.css";
 
 const resources = {
     users: { label: "Users", group: "Customers", fields: ["email", "password", "first_name", "last_name", "role", "is_staff", "is_active"], columns: ["email", "first_name", "last_name", "role", "last_login", "is_active"] },
@@ -574,7 +575,7 @@ function ResourceEditorPage({ resource, id, schema }) {
     const config = resources[resource];
     const navigate = useNavigate();
     const editing = Boolean(id);
-    const [values, setValues] = useState(() => resource === "trust-benefits" ? { display_order: 1, is_active: true } : resource === "product-highlights" ? { highlight_type: "message", icon_key: "tag", background_color: "#1B4D44", text_color: "#FFFFFF", display_order: 0, rotation_seconds: 4, is_active: true } : resource === "product-messages" ? { message_type: "text", background_color: "#EAF4FF", text_color: "#173B35", display_order: 0, rotation_seconds: 4, is_active: true } : {});
+    const [values, setValues] = useState(() => resource === "trust-benefits" ? { display_order: 1, is_active: true } : resource === "product-highlights" ? { highlight_type: "message", icon_key: "tag", background_color: "#171513", text_color: "#FFFFFF", display_order: 0, rotation_seconds: 4, is_active: true } : resource === "product-messages" ? { message_type: "text", background_color: "#f5ead6", text_color: "#171513", display_order: 0, rotation_seconds: 4, is_active: true } : {});
     const [references, setReferences] = useState({});
     const [loading, setLoading] = useState(editing);
     const [saving, setSaving] = useState(false);
@@ -690,7 +691,7 @@ function OrderEditPage({ id }) {
 
 function ResourceModal({ resource, schema, mode, row, initialValues = {}, onClose, onSaved }) {
     const config = resources[resource];
-    const [values, setValues] = useState(() => normalizeResourceValues({ ...(resource === "product-highlights" ? { highlight_type: "message", icon_key: "tag", background_color: "#1B4D44", text_color: "#FFFFFF", display_order: 0, rotation_seconds: 4, is_active: true } : resource === "product-messages" ? { message_type: "text", background_color: "#EAF4FF", text_color: "#173B35", display_order: 0, rotation_seconds: 4, is_active: true } : {}), ...(row || {}), ...initialValues }, resource));
+    const [values, setValues] = useState(() => normalizeResourceValues({ ...(resource === "product-highlights" ? { highlight_type: "message", icon_key: "tag", background_color: "#171513", text_color: "#FFFFFF", display_order: 0, rotation_seconds: 4, is_active: true } : resource === "product-messages" ? { message_type: "text", background_color: "#f5ead6", text_color: "#171513", display_order: 0, rotation_seconds: 4, is_active: true } : {}), ...(row || {}), ...initialValues }, resource));
     const [saving, setSaving] = useState(false);
     const [requestError, setRequestError] = useState(null);
     const [references, setReferences] = useState({});

@@ -655,7 +655,7 @@ function Single_product() {
                     <div className="main-image-wrapper">
                         <div className="main-image" style={{ cursor: 'pointer' }}>
                             <button className="wishlist-icon" onClick={(e) => { e.stopPropagation(); addToWishlist(); }}>
-                                {isWishlisted ? <FaHeart color="#fd0707ff" /> : <FaRegHeart color="#1F5B3E" />}
+                                {isWishlisted ? <FaHeart color="#fd0707ff" /> : <FaRegHeart color="#171513" />}
                             </button>
                             <img
                                 onClick={() => {
@@ -679,8 +679,8 @@ function Single_product() {
                     {data.current_viewers_count != null && (
                         <div className="viewers-count-badge">
                             <div className="eye-wrapper">
-                                <AiOutlineEye size={18} color="#007185" />
-                                <span><strong style={{ color: "#007185" }}>{data.current_viewers_count} person{data.current_viewers_count > 1 ? "s" : ""}</strong> is watching this product now.</span>
+                                <AiOutlineEye size={18} color="#171513" />
+                                <span><strong style={{ color: "#171513" }}>{data.current_viewers_count} person{data.current_viewers_count > 1 ? "s" : ""}</strong> is watching this product now.</span>
                             </div>
                             <span className="close-badge-btn">×</span>
                         </div>

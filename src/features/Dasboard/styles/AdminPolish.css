@@ -1,6 +1,6 @@
 /* Shared dashboard design layer: calm surfaces, strong hierarchy, and keyboard-first controls. */
 :root {
-    --admin-focus: rgba(255, 144, 0, .28);
+    --admin-focus: rgba(199, 154, 67, .28);
     --admin-radius-sm: 8px;
     --admin-radius-md: 14px;
     --admin-radius-lg: 18px;
@@ -32,7 +32,7 @@
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    background: #f2f6f4;
+    background: #fbf6ee;
     letter-spacing: .005em;
     overflow-x: hidden;
 }
@@ -50,7 +50,7 @@
 }
 
 .admin-brand-mark {
-    box-shadow: 0 7px 15px rgba(255, 144, 0, .18);
+    box-shadow: 0 7px 15px rgba(199, 154, 67, .18);
 }
 
 .admin-nav-item,
@@ -124,7 +124,7 @@
 }
 
 .admin-button.primary {
-    box-shadow: 0 7px 14px rgba(255, 144, 0, .17);
+    box-shadow: 0 7px 14px rgba(199, 154, 67, .17);
 }
 
 .admin-button.primary:hover,
@@ -148,7 +148,7 @@
 
 .admin-stat-card {
     min-height: 106px;
-    border-color: #dfe8e4;
+    border-color: #e5d7c2;
 }
 
 .admin-stat-card strong {
@@ -164,13 +164,13 @@
 }
 
 .admin-panel-heading {
-    border-bottom: 1px solid #edf2ef;
+    border-bottom: 1px solid #f1e8dc;
 }
 
 .admin-filters {
     gap: 12px;
     padding: 14px 18px;
-    background: linear-gradient(180deg, #fbfdfc 0%, #f7faf8 100%);
+    background: linear-gradient(180deg, #fffdf9 0%, #fffaf2 100%);
     flex-wrap: wrap;
 }
 
@@ -196,19 +196,19 @@
 .admin-date {
     min-height: 42px;
     border-radius: var(--admin-radius-sm);
-    border-color: #dce6e1;
+    border-color: #e5d7c2;
     box-shadow: inset 0 1px 1px rgba(33, 60, 63, .025);
 }
 
 .admin-search:focus-within,
 .admin-select:focus-within,
 .admin-date:focus-within {
-    border-color: #f2b55e;
+    border-color: #a97824;
     box-shadow: 0 0 0 3px var(--admin-focus);
 }
 
 .admin-table-wrap {
-    scrollbar-color: #cbd8d2 #f5f8f6;
+    scrollbar-color: #c79a43 #fffaf2;
     scrollbar-width: thin;
 }
 
@@ -217,7 +217,7 @@
 }
 
 .admin-table th {
-    background: #f8fbf9;
+    background: #fffaf2;
     color: #73878b;
 }
 
@@ -226,7 +226,7 @@
 }
 
 .admin-table tbody tr:nth-child(even) {
-    background: #fcfefd;
+    background: #fffdf9;
 }
 
 .admin-table tbody tr:hover,
@@ -245,7 +245,7 @@
 }
 
 .table-icon:hover {
-    border-color: #f3d29e;
+    border-color: #e5d7c2;
     transform: translateY(-1px);
 }
 
@@ -255,7 +255,7 @@
 
 .admin-pagination {
     min-height: 62px;
-    border-top: 1px solid #edf2ef;
+    border-top: 1px solid #f1e8dc;
 }
 
 .admin-pagination-actions select {
@@ -294,7 +294,7 @@
 
 .admin-modal-heading {
     padding-bottom: 16px;
-    border-bottom: 1px solid #edf2ef;
+    border-bottom: 1px solid #f1e8dc;
 }
 
 .admin-form-field > span,
@@ -319,13 +319,13 @@
     max-width: 180px;
     max-height: 110px;
     object-fit: cover;
-    border: 1px solid #dfe8e4;
+    border: 1px solid #e5d7c2;
     border-radius: 9px;
 }
 
 .product-editor-section {
     overflow: hidden;
-    border: 1px solid #dfe8e4;
+    border: 1px solid #e5d7c2;
     border-radius: var(--admin-radius-md);
     background: #fff;
     box-shadow: 0 8px 22px rgba(35, 58, 62, .045);
@@ -334,8 +334,8 @@
 .product-section-heading {
     min-height: 58px;
     padding: 0 20px;
-    background: #fbfdfc;
-    border-bottom: 1px solid #edf2ef;
+    background: #fffdf9;
+    border-bottom: 1px solid #f1e8dc;
     color: var(--admin-ink);
 }
 
@@ -353,7 +353,7 @@
 .editor-unit-row input,
 .editor-unit-row select {
     min-height: 42px;
-    border-color: #dce6e1;
+    border-color: #e5d7c2;
     border-radius: var(--admin-radius-sm);
     transition: border-color .18s ease, box-shadow .18s ease;
 }
@@ -363,13 +363,13 @@
 .product-field textarea:focus,
 .editor-unit-row input:focus,
 .editor-unit-row select:focus {
-    border-color: #f2b55e;
+    border-color: #a97824;
     box-shadow: 0 0 0 3px var(--admin-focus);
     outline: none;
 }
 
 .variant-card {
-    border-color: #dfe8e4;
+    border-color: #e5d7c2;
     border-radius: var(--admin-radius-md);
     box-shadow: 0 6px 16px rgba(35, 58, 62, .035);
 }
@@ -380,9 +380,9 @@
 }
 
 .price-type-field {
-    border-color: #dfe8e4;
+    border-color: #e5d7c2;
     border-radius: var(--admin-radius-sm);
-    background: #fbfdfc;
+    background: #fffdf9;
 }
 
 .price-type-field input[type="radio"] {
@@ -392,13 +392,13 @@
 .variant-images {
     margin-top: 21px;
     padding-top: 18px;
-    border-top: 1px solid #edf2ef;
+    border-top: 1px solid #f1e8dc;
 }
 
 .variant-image-item {
-    border: 1px solid #dfe8e4;
+    border: 1px solid #e5d7c2;
     border-radius: 10px;
-    background: #f7faf8;
+    background: #fffaf2;
     box-shadow: 0 4px 12px rgba(35, 58, 62, .06);
 }
 
@@ -416,7 +416,7 @@
 }
 
 .hero-editor-card {
-    border-color: #dfe8e4;
+    border-color: #e5d7c2;
     box-shadow: 0 10px 26px rgba(35, 58, 62, .055);
 }
 
@@ -443,7 +443,7 @@
 
 .hero-save-button {
     background: var(--admin-brand);
-    box-shadow: 0 7px 14px rgba(255, 144, 0, .17);
+    box-shadow: 0 7px 14px rgba(199, 154, 67, .17);
 }
 
 .hero-save-button:hover {
@@ -452,13 +452,13 @@
 
 .hero-secondary-button {
     background: #fff;
-    border: 1px solid #dfe8e4 !important;
+    border: 1px solid #e5d7c2 !important;
     color: var(--admin-ink);
 }
 
 .hero-secondary-button:hover {
     background: #fff9f0;
-    border-color: #f3d29e !important;
+    border-color: #e5d7c2 !important;
 }
 
 .admin-table-skeleton {
@@ -473,7 +473,7 @@
     gap: 18px;
     align-items: center;
     min-height: 56px;
-    border-bottom: 1px solid #edf2ef;
+    border-bottom: 1px solid #f1e8dc;
 }
 
 .admin-table-skeleton-head {
@@ -484,7 +484,7 @@
     display: block;
     height: 12px;
     border-radius: 999px;
-    background: linear-gradient(100deg, #e9f0ec 18%, #f8fbf9 38%, #e9f0ec 58%);
+    background: linear-gradient(100deg, #e9f0ec 18%, #fffaf2 38%, #e9f0ec 58%);
     background-size: 220% 100%;
     animation: admin-skeleton-shimmer 1.25s ease-in-out infinite;
 }
@@ -679,11 +679,11 @@
 .admin-app {
     --admin-button-height: 42px;
     --admin-button-radius: 10px;
-    --admin-button-brand: #f28a13;
-    --admin-button-brand-hover: #d97805;
-    --admin-button-ink: #293d45;
+    --admin-button-brand: #a97824;
+    --admin-button-brand-hover: #a97824;
+    --admin-button-ink: #1d1a17;
     --admin-button-muted: #61767c;
-    --admin-button-line: #dce6e1;
+    --admin-button-line: #e5d7c2;
     --admin-button-danger: #bd3d4d;
 }
 
@@ -721,7 +721,7 @@
 .admin-app .hero-save-button:hover {
     background: var(--admin-button-brand-hover);
     border-color: var(--admin-button-brand-hover);
-    box-shadow: 0 9px 18px rgba(217, 120, 5, .2);
+    box-shadow: 0 9px 18px rgba(199, 154, 67, .2);
     transform: translateY(-1px);
 }
 
@@ -736,8 +736,8 @@
 .admin-app .admin-button.secondary:hover,
 .admin-app .hero-secondary-button:hover {
     background: #fff8ed;
-    border-color: #f0c27b !important;
-    color: #a85f08;
+    border-color: #d9b474 !important;
+    color: #a97824;
     box-shadow: 0 5px 12px rgba(40, 62, 66, .08);
     transform: translateY(-1px);
 }
@@ -807,8 +807,8 @@
 .admin-app .admin-menu:hover,
 .admin-app .admin-close:hover {
     background: #fff8ed;
-    border-color: #f0c27b;
-    color: #a85f08;
+    border-color: #d9b474;
+    color: #a97824;
     box-shadow: 0 4px 10px rgba(40, 62, 66, .08);
     transform: translateY(-1px);
 }
@@ -825,7 +825,7 @@
 
 .admin-app .admin-menu,
 .admin-app .admin-close {
-    background: #f7faf8;
+    background: #fffaf2;
 }
 
 .admin-app .admin-access-alert > button {
@@ -885,8 +885,8 @@
 .admin-app .admin-back-link:hover,
 .admin-app .hero-back-link:hover {
     background: #fff8ed;
-    border-color: #f0c27b;
-    color: #a85f08;
+    border-color: #d9b474;
+    color: #a97824;
     text-decoration: none;
     box-shadow: 0 4px 10px rgba(40, 62, 66, .07);
     transform: translateY(-1px);
@@ -905,9 +905,9 @@
     align-items: center;
     gap: 6px;
     padding: 7px 10px;
-    border: 1px solid #cbdcd5;
+    border: 1px solid #e5d7c2;
     border-radius: 9px;
-    background: #f7fbf9;
+    background: #fffaf2;
     color: #3d6268;
     font-size: 12px;
     font-weight: 700;
@@ -917,8 +917,8 @@
 
 .admin-app .table-copy-button:hover {
     background: #fff8ed;
-    border-color: #f0c27b;
-    color: #a85f08;
+    border-color: #d9b474;
+    color: #a97824;
     transform: translateY(-1px);
 }
 
@@ -928,9 +928,9 @@
     display: inline-grid;
     place-items: center;
     padding: 0;
-    border: 1px solid #cbdcd5;
+    border: 1px solid #e5d7c2;
     border-radius: 9px;
-    background: #f7fbf9;
+    background: #fffaf2;
     color: var(--admin-button-brand-hover);
     font-size: 20px;
     cursor: pointer;
@@ -939,17 +939,17 @@
 
 .admin-app .coupon-add-product:hover {
     background: #fff8ed;
-    border-color: #f0c27b;
-    color: #a85f08;
+    border-color: #d9b474;
+    color: #a97824;
     transform: translateY(-1px);
 }
 
 .admin-app .coupon-selected-products button {
     min-height: 32px;
-    border: 1px solid #cbdcd5;
+    border: 1px solid #e5d7c2;
     border-radius: 999px;
-    background: #f3f8f6;
-    color: #365b61;
+    background: #f5ead6;
+    color: #3c352c;
     padding: 6px 10px;
     font-size: 12px;
     cursor: pointer;
