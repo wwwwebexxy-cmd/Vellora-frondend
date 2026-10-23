@@ -1,31 +1,30 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import picklePoster from "../../../assets/vellora/pickle-range.jpeg";
-import coconutPoster from "../../../assets/vellora/coconut-oil-cold.jpeg";
-import kitchenPoster from "../../../assets/vellora/garlic-pickle-product.jpeg";
+import brandSheetPoster from "../../../assets/vellora/vellora-brand-sheet.jpeg";
+import lifestylePoster from "../../../assets/vellora_lifestyle_vibe.png";
 import "../styles/VelloraVideoSection.css";
 
 const videos = {
-    kerala: {
-        src: "/vellora-videos/vellora-coconut-oil-story.mp4",
-        poster: coconutPoster,
-        eyebrow: "Everyday lifestyle",
-        title: "Find something beautiful for every day",
-        copy: "Discover useful, stylish and thoughtfully selected products for every space, mood and moment.",
+    fashion: {
+        src: "/vellora-videos/vellora-fashion-accessories.mp4",
+        poster: brandSheetPoster,
+        eyebrow: "Fashion & accessories",
+        title: "Style starts with the details",
+        copy: "Explore polished pieces, everyday accessories and timeless finds for your wardrobe.",
     },
-    pickle: {
-        src: "/vellora-videos/vellora-pickle-story.mp4",
-        poster: picklePoster,
-        eyebrow: "Curated collections",
-        title: "Style made easy",
-        copy: "Explore fresh finds across fashion, accessories, home and living, gifts, electronics and more.",
+    gifts: {
+        src: "/vellora-videos/vellora-gift-wrapping.mp4",
+        poster: brandSheetPoster,
+        eyebrow: "Thoughtful gifting",
+        title: "Make every moment feel special",
+        copy: "Discover gift-ready picks for celebrations, surprises and everyday thank-yous.",
     },
-    kitchen: {
-        src: "/vellora-videos/vellora-kitchen-story.mp4",
-        poster: kitchenPoster,
-        eyebrow: "More to explore",
-        title: "More than just shopping",
-        copy: "Shop smart, live beautiful and enjoy a seamless experience from discovery to delivery.",
+    home: {
+        src: "/vellora-videos/vellora-home-interior.mp4",
+        poster: lifestylePoster,
+        eyebrow: "Home & living",
+        title: "Beautiful spaces, made easy",
+        copy: "Bring warmth, comfort and character home with useful pieces for every room.",
     },
 };
 
@@ -100,7 +99,7 @@ function VelloraVideoSection({ compact = false }) {
                     </p>
                 </div>
                 <div className="vellora-story-feature">
-                    <BusinessVideo video={videos.kerala} featured />
+                    <BusinessVideo video={videos.fashion} featured />
                     <div className="vellora-story-note">
                         <span className="vellora-story-note-mark" aria-hidden="true">✦</span>
                         <h3>Shop smart. Live beautiful.</h3>
@@ -123,8 +122,8 @@ function VelloraVideoSection({ compact = false }) {
                     </p>
                 </div>
                 <div className="vellora-story-grid">
-                    <BusinessVideo video={videos.pickle} />
-                    <BusinessVideo video={videos.kitchen} />
+                    <BusinessVideo video={videos.gifts} />
+                    <BusinessVideo video={videos.home} />
                 </div>
             </div>
 
