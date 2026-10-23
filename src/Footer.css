@@ -18,7 +18,15 @@
 }
 
 .footer-logo {
-    width: 170px;
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
     margin-bottom: 18px;
 }
 
@@ -138,7 +146,8 @@
     }
 
     .footer-logo {
-        width: 100%;
+        width: min(180px, 100%);
+        height: auto;
     }
 
 
@@ -228,6 +237,7 @@
 
     .footer-logo {
         width: min(170px, 100%);
+        height: auto;
     }
 
     .footer-column h3 {

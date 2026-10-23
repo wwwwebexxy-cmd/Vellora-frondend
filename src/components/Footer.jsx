@@ -1,6 +1,6 @@
 import "./../Footer.css";
 
-import footerlogo from './../assets/vellora/vellora-logo-transparent-vellora.png'
+import footerlogo from './../assets/vellora/vellora-logo-footer-stroke.png'
 import { Link } from 'react-router-dom';
 import { FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";

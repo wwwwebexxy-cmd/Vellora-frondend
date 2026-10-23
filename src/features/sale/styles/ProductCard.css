@@ -78,11 +78,12 @@
     z-index: 5;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     flex: 0 0 auto;
     flex-wrap: nowrap;
-    gap: 6px;
+    gap: 4px;
     min-height: 0;
-    padding: 0 48px 0 0;
+    padding: 0;
     background: transparent;
     pointer-events: none;
 }
@@ -122,6 +123,9 @@
     font-weight: 700;
     letter-spacing: .02em;
     line-height: 1;
+    overflow: visible;
+    text-overflow: clip;
+    white-space: nowrap;
     pointer-events: none;
 }
 
@@ -133,8 +137,17 @@
 }
 
 .product-image-topbar .offer-badge {
-    position: static;
+    position: absolute;
+    top: 0;
+    right: 0;
     margin: 0;
+    flex: 0 0 auto;
+    padding: 4px 7px;
+    border-radius: 16px;
+    font-size: 9px;
+    line-height: 1;
+    white-space: nowrap;
+    z-index: 7;
 }
 
 /* .product_card:hover .product_img img {
@@ -161,10 +174,10 @@
 /* --- Custom Minimalist Wishlist Circle --- */
 .favorite_btn {
     position: absolute;
-    top: 14px;
-    right: 14px;
-    width: 32px;
-    height: 32px;
+    top: 32px;
+    right: 8px;
+    width: 27px;
+    height: 27px;
     border: none;
     border-radius: 50%;
     background: #fbf6ee;
@@ -176,13 +189,13 @@
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     z-index: 5;
-    font-size: 14px;
+    font-size: 13px;
     transition: transform 0.2s ease;
 }
 
 .favorite_btn{
-    width:40px;
-    height:40px;
+    width:27px;
+    height:27px;
     border:none;
     border-radius:50%;
     background: #fbf6ee;
@@ -531,21 +544,27 @@
     }
 
     .favorite_btn {
-        top: 6px;
+        top: 27px;
         right: 7px;
-        width: 25px;
-        height: 25px;
+        width: 23px;
+        height: 23px;
+        font-size: 12px;
 
     }
 
     .offer-badge {
         background: #171513;
         color: #FFFFFF;
-        padding: 6px 12px;
+        padding: 4px 7px;
         border-radius: 20px;
-        font-size: 9px;
+        font-size: 7.5px;
         font-weight: 600;
         letter-spacing: .5px;
+    }
+
+    .product-image-topbar .offer-badge {
+        top: 0;
+        right: 0;
     }
 
     .product_img .product-highlight-rail--badge {
@@ -556,7 +575,7 @@
 
     .product-image-topbar {
         gap: 4px;
-        padding: 0 38px 0 0;
+        padding: 0;
     }
 
     .quick-add-bar {
